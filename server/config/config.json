@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "santhosh@pg",
+    "database": "gatsby-business-dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "santhosh@pg",
+    "database": "gatsby-business-test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "santhosh@pg",
+    "database": "gatsby-busniess-prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
