@@ -3,6 +3,7 @@ const UserSchema = require('../validations').userSchema;
 
 module.exports = {
   async create(req, res) {
+    console.log(req.body);
     try {
       await UserSchema.validateAsync(req.body);
       const user = await User
@@ -14,8 +15,7 @@ module.exports = {
       res.status(201).send(user);
     }
     catch(err) {
-      console.log(err);
-      res.status(400).send(err.details);
+      res.status(400).send(err);
     }
   },
 };
